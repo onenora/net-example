@@ -15,7 +15,7 @@
 
 3、Nginx 版本不小于 v1.25.1 才支持 H2C server 与 HTTP/1.1 server 共用一个端口或一个进程。若 Nginx 版本小于 v1.25.1，回落必须分成 h2 回落与 http/1.1 回落分别对应 Nginx 的 H2C server 与 HTTP/1.1 server。
 
-4、Nginx 支持请求标头还原为真实客户端地址需要 Nginx 包含 http_realip_module 模块。
+4、Nginx 支持对请求标头的 PROXY 协议处理需要 Nginx 包含 http_realip_module 模块。
 
 5、不要使用 ACME 客户端在采用本示例的服务器上以 HTTP-01 或 TLS-ALPN-01 验证方式申请与更新 TLS 证书，因 HTTP-01 或 TLS-ALPN-01 验证方式申请与更新 TLS 证书需监听 80 或 443 端口，从而与当前应用端口冲突。
 
