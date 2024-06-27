@@ -8,7 +8,7 @@
 
 注意：
 
-1、Xray 版本不小于 v1.8.0 才支持 REALITY，其同步 uTLS（强制客户端必须使用指纹伪造）。
+1、Xray 版本不小于 v1.8.0 才支持 REALITY。
 
 2、若目标网站使用外部的，其网站最低要求：国外网站、域名非跳转、支持 TLSv1.3 与 HTTP/2，是否符合要求可用 [SSL Server Test](https://www.ssllabs.com/ssltest/) 检查。
 
